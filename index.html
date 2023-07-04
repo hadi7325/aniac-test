@@ -1,0 +1,2367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./css/general.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="pro/css/all.css"> -->
+    <!-- <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.min.css"> -->
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div id="overlay-cover"></div> -->
+    <div class="overlay"></div>
+    <nav class="nav">
+          
+        <div class="btn-menu-responsive" onclick="showMenuResponsive(this)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="var(--white)"><path d="M22 20c.553 0 1 .448 1 1s-.447 1-1 1H7c-.553 0-1-.448-1-1s.447-1 1-1zM6 5.5c2.757 0 5 2.243 5 5 0 1.017-.309 1.962-.833 2.753l3.54 3.54c.391.391.391 1.023 0 1.414-.195.195-.451.293-.707.293-.256 0-.512-.098-.707-.293l-3.54-3.54c-.791.524-1.736.833-2.753.833-2.757 0-5-2.243-5-5s2.243-5 5-5zM22 14c.552 0 1 .448 1 1l-.007.117c-.058.497-.48.883-.993.883h-7c-.553 0-1-.448-1-1s.447-1 1-1zM6 7.5c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3zM22 8c.552 0 1 .448 1 1l-.007.117c-.058.497-.48.883-.993.883h-7c-.553 0-1-.448-1-1s.447-1 1-1zm0-6c.553 0 1 .448 1 1s-.447 1-1 1H7c-.553 0-1-.448-1-1s.447-1 1-1z"></path></svg>
+        </div>
+        <div class="nav-right">
+            <div class="logo"><a href="">ANIAC</a></div>
+
+            <div class="nav-links">
+                <div class="logo-responsive">
+                    <a href="">ANIAC</a>
+                </div>
+                <ul class="links">
+
+                    <li><a href="">انیاک من</a></li>
+                    <li><a href=""> محصولات</a></li>
+                    <li onclick="showDropItems(this)" class="link-parent"><a href="#"><i class="fas fa-plus fw-bold"></i> <span>فناوری</span></a>
+                        <ul class="link-drop-down">
+                            <li><a href="">گوشی موبایل</a></li>
+                            <li><a href="">گوشی موبایل</a></li>
+                            <li><a href="">گوشی موبایل</a></li>
+                            <li><a href="">گوشی موبایل</a></li>
+                            <li><a href="">گوشی موبایل</a></li>
+                            <li><a href="">گوشی موبایل</a></li>
+                            <li><a href="">گوشی موبایل</a></li>
+                            <li><a href="">گوشی موبایل</a></li>
+                            <li><a href="">گوشی موبایل</a></li>
+                            <li><a href="">گوشی موبایل</a></li>
+                            <li><a href="">گوشی موبایل</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">راهنمای خرید </a></li>
+                    <li><a href=""> بررسی </a></li>
+                    <li><a href=""> ویدیو</a></li>
+                    <li onclick="showDropItems(this)" class="link-parent"><a href="#"> <i class="fas fa-plus fw-bold"></i> <span>ایناک</span></a>
+                        <ul class="link-drop-down">
+                            <li><a href="">درباره ما</a></li>
+                            <li><a href=""> تماس با ما</a></li>
+                            <li><a href=""> قوانین</a></li>
+                            <li><a href=""> تبلیغات</a></li>
+                            <li><a href=""> فرصت های شغلی</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="display-none"><a class="drop-down" href="#"> جستجو</a>
+
+
+                    </li>
+
+                    
+
+
+                </ul>
+                <div class="drop-search-box">
+                    <form action="">
+                        <div class="col-md-6 m-auto">
+                            <input type="text" name="" class="form-control rounded-pill" placeholder="جستجو">
+                            <div class="suggestion d-flex align-items-center ">
+                                <div class="tilte"><i class="fas fa-fire"></i> داغ ترین ها</div>
+                                <ul class="list-group suggestion-list  my-3 mx-5">
+                                    <li><a class="text-black-50" href="">آموزش قدم به قدم</a></li>
+                                    <li><a class="text-black-50" href="">راهتمای خرید</a></li>
+                                    <li><a class="text-black-50" href="">ویندوز 11</a></li>
+                                    <li><a class="text-black-50" href="">آموزش اینستاگرام</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="user">
+            <i class="fas fa-user"></i>
+        </div>
+
+
+    </nav>
+    <div class="recent my-5 my-lg-0 ">
+        <div class=" container-fluid recent-desktop">
+            <div class="row">
+                <div class="col-md-5 p-0">
+                    <a class="recent-item " href="">
+                        <img src="./images/sleep-paralysis-6496a975bd08399960402628.jpg" alt="">
+                        <div class="title">ایا بختک واقعی است</div>
+                        <div class="shadowItem "></div>
+                    </a>
+                </div>
+                <div class="col-md-7">
+                    <div class="row">
+                        <div class="col-md-6 p-0">
+                            <a class="recent-item " href="">
+                                <img src="./images/what-is-cellulose-swamp-cooler-breezair-649bcfdd1e231e7d4e4bfb97.webp"
+                                    alt="">
+                                <div class="title">همه چیز درباره کولر آبی</div>
+                                <div class="shadowItem "></div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 p-0">
+                            <a class="recent-item " href="">
+                                <img src="./images/google-pixel-fold-phone-two-649d1e901e231e7d4e4bfe51.webp" alt="">
+                                <div class="title">پیکسل فولد از نگاه رسانه های فناوری</div>
+                                <div class="shadowItem "></div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <swiper-container class="respondive-recent">
+            <div class="swiper recent-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide ">
+
+                        <div class="general-box-inside-style">
+                            <a href="">
+                                <div class="box-image">
+                                    <img src="./images/sleep-paralysis-6496a975bd08399960402628.jpg" alt="">
+
+                                </div>
+                                <div class="shadowItem"></div>
+                                <div class="title">ایا بختک واقعی است</div>
+
+                            </a>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="swiper-slide ">
+
+                        <div class="general-box-inside-style">
+                            <a href="">
+                                <div class="box-image">
+                                    <img src="./images/what-is-cellulose-swamp-cooler-breezair-649bcfdd1e231e7d4e4bfb97.webp"
+                                        alt="">
+
+
+                                </div>
+                                <div class="shadowItem"></div>
+                                <div class="title">همه چیز درباره کولر آبی</div>
+
+                            </a>
+
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="swiper-slide ">
+
+                        <div class="general-box-inside-style">
+                            <a href="">
+                                <div class="box-image">
+                                    <img src="./images/google-pixel-fold-phone-two-649d1e901e231e7d4e4bfe51.webp"
+                                        alt="">
+
+                                </div>
+                                <div class="shadowItem"></div>
+                                <div class="title">پیکسل فولد از نگاه رسانه های فناوری</div>
+
+
+                            </a>
+
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <span class="swiper-pagination"></span>
+            </div>
+
+
+
+        </swiper-container>
+
+    </div>
+
+    <section class="shop-slider">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-3">
+                    <div class="section-title">
+                        <h3>با چشم باز خرید کنید</h3>
+                        <p>انیاک شما را برای خرید بهتر راهنمایی می کند</p>
+                        <a href="">ورود به بخش محصولات <i class="fas fa-arrow-left"></i> </a>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-9 position-relative">
+                    <swiper-container>
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <a class="swiper-slide">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 80">
+                                        <path
+                                            d="M44 34c-.552 0-1-.448-1-1V21c0-.552.448-1 1-1s1 .448 1 1v12c0 .552-.448 1-1 1M32 54c-.552 0-1-.448-1-1v-3h-3c-.552 0-1-.448-1-1s.448-1 1-1h3v-3c0-.552.448-1 1-1s1 .448 1 1v3h3c.552 0 1 .448 1 1s-.448 1-1 1h-3v3c0 .552-.448 1-1 1m9.156-2h5.688c.398 0 .757.235.916.599C49.196 55.88 52.43 58 56 58c4.962 0 9-4.038 9-9s-4.038-9-9-9H32c-4.962 0-9 4.038-9 9s4.038 9 9 9c3.569 0 6.804-2.12 8.24-5.401.159-.364.519-.599.916-.599M56 60c-4.143 0-7.916-2.334-9.788-6h-4.423c-1.874 3.666-5.646 6-9.789 6-6.065 0-11-4.935-11-11s4.935-11 11-11h24c6.065 0 11 4.935 11 11s-4.935 11-11 11m1-12.5c0 .828.672 1.5 1.5 1.5s1.5-.672 1.5-1.5c0-.829-.672-1.5-1.5-1.5s-1.5.671-1.5 1.5zm-4 4c0 .828.672 1.5 1.5 1.5.829 0 1.5-.672 1.5-1.5 0-.829-.671-1.5-1.5-1.5-.828 0-1.5.671-1.5 1.5z"
+                                            transform="translate(-1308.000000, -514.000000) translate(1308.000000, 514.000000)">
+                                        </path>
+                                    </svg>
+                                    <div class="name"> کنسول بازی</div>
+
+                                </a>
+                                <a class="swiper-slide ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 80">
+                                        <path
+                                            d="M29 19c-1.654 0-3 1.346-3 3v36c0 1.654 1.346 3 3 3h30c1.654 0 3-1.346 3-3V22c0-1.654-1.346-3-3-3H29zm30 44H29c-2.757 0-5-2.243-5-5V22c0-2.757 2.243-5 5-5h30c2.757 0 5 2.243 5 5v36c0 2.757-2.243 5-5 5zm-17-8c0 1.104.896 2 2 2s2-.896 2-2-.896-2-2-2-2 .896-2 2z">
+                                        </path>
+                                    </svg>
+                                    <div class="name"> تبلت</div>
+
+                                </a>
+                                <a class="swiper-slide ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 80">
+                                        <path fill-rule="evenodd"
+                                            d="M66 53H22c-.552 0-1-.448-1-1V20c0-.552.448-1 1-1h44c.552 0 1 .448 1 1v32c0 .552-.448 1-1 1zm-1-6v4H23v-4h42zm0-26v24H23V21h42zM44 54c.552 0 1 .448 1 1l.001 2.013c6.58.172 11.17 1.978 11.371 2.058.512.205.761.787.556 1.3-.156.391-.532.629-.929.629-.123 0-.248-.023-.37-.071C55.581 60.91 50.704 59 44 59s-11.581 1.91-11.629 1.929c-.516.203-1.095-.046-1.299-.558-.205-.513.044-1.095.556-1.3.202-.08 4.792-1.886 11.372-2.058V55c0-.552.448-1 1-1z"
+                                            transform="translate(-972.000000, -784.000000) translate(972.000000, 784.000000)">
+                                        </path>
+                                    </svg>
+                                    <div class="name"> تلویزیون</div>
+
+                                </a>
+                                <a class="swiper-slide ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 80">
+                                        <path
+                                            d="M33 19c-1.654 0-3 1.346-3 3v36c0 1.654 1.346 3 3 3h22c1.654 0 3-1.346 3-3V22c0-1.654-1.346-3-3-3H33zm22 44H33c-2.757 0-5-2.243-5-5V22c0-2.757 2.243-5 5-5h22c2.757 0 5 2.243 5 5v36c0 2.757-2.243 5-5 5zm-13-8c0 1.104.896 2 2 2 1.105 0 2-.896 2-2s-.895-2-2-2c-1.104 0-2 .896-2 2z">
+                                        </path>
+                                    </svg>
+                                    <div class="name"> موبایل</div>
+
+                                </a>
+                                <a class="swiper-slide ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 80">
+                                        <path
+                                            d="M52 17c.447 0 .839.296.962.726l1.81 6.333C57.164 24.432 59 26.505 59 29v6h3c.552 0 1 .448 1 1v8c0 .552-.448 1-1 1h-3v6c0 2.495-1.836 4.568-4.228 4.94l-1.811 6.335c-.122.429-.515.725-.961.725H32c-.446 0-.839-.296-.961-.725l-1.81-6.334C26.835 55.568 25 53.495 25 51V29c0-2.495 1.836-4.568 4.228-4.94l1.81-6.334c.123-.43.515-.726.962-.726h20zm.675 39h-21.35l1.429 5h18.492l1.429-5zM54 26H30c-1.654 0-3 1.346-3 3v22c0 1.654 1.346 3 3 3h24c1.654 0 3-1.346 3-3V29c0-1.654-1.346-3-3-3zm7 11h-2v6h2v-6zm-19-6c.552 0 1 .448 1 1v7h8c.552 0 1 .448 1 1s-.448 1-1 1h-9c-.552 0-1-.448-1-1v-8c0-.552.448-1 1-1zm9.245-12h-18.49l-1.43 5h21.349l-1.428-5z">
+                                        </path>
+                                    </svg>
+                                    <div class="name"> ساعت </div>
+
+                                </a>
+                                <a class="swiper-slide ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 80">
+                                        <path
+                                            d="M62 45c-.552 0-1-.448-1-1V28c0-1.654-1.346-3-3-3H30c-1.654 0-3 1.346-3 3v16c0 .552-.448 1-1 1s-1-.448-1-1V28c0-2.757 2.243-5 5-5h28c2.757 0 5 2.243 5 5v16c0 .552-.448 1-1 1M45 31h-2c-.552 0-1-.448-1-1s.448-1 1-1h2c.552 0 1 .448 1 1s-.448 1-1 1M23 50v2c0 1.654 1.346 3 3 3h36c1.654 0 3-1.346 3-3v-2H52v1c0 .552-.448 1-1 1H37c-.552 0-1-.448-1-1v-1H23zm39 7H26c-2.757 0-5-2.243-5-5v-3c0-.552.448-1 1-1h15c.552 0 1 .448 1 1v1h12v-1c0-.552.448-1 1-1h15c.552 0 1 .448 1 1v3c0 2.757-2.243 5-5 5z"
+                                            transform="translate(-636.000000, -649.000000) translate(636.000000, 649.000000)">
+                                        </path>
+                                    </svg>
+                                    <div class="name"> لپ تاپ</div>
+
+                                </a>
+                                <a class="swiper-slide ">
+                                    <svg viewBox="0 0 88 80" xmlns="http://www.w3.org/2000/svg">
+                                        <g fill-rule="nonzero">
+                                            <path d="M66 39a1 1 0 0 1 0 2H22a1 1 0 0 1 0-2h44z"></path>
+                                            <path
+                                                d="M56 23H32a1 1 0 0 0-.848.47l-10 16A1 1 0 0 0 21 40v16a1 1 0 0 0 1 1h44a1 1 0 0 0 1-1V40a1 1 0 0 0-.152-.53l-10-16A1 1 0 0 0 56 23zm-.554 2L65 40.286V55H23V40.284L32.553 25h22.893z">
+                                            </path>
+                                            <path d="M58 47a1 1 0 0 1 0 2H30a1 1 0 0 1 0-2h28z"></path>
+                                        </g>
+                                    </svg>
+                                    <div class="name"> هارد</div>
+
+                                </a>
+                                <a class="swiper-slide ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 80">
+                                        <path
+                                            d="M31 33c-4.411 0-8 3.589-8 8 0 4.739 4.139 8.574 9 7.934V33.066c-.336-.044-.671-.066-1-.066zm25 15.934c4.861.641 9-3.194 9-7.934s-4.153-8.567-9-7.934v15.868zM38 61h10v-2H38v2zm11 2H37c-.552 0-1-.448-1-1v-1h-2c-3.86 0-7-3.14-7-7v-3.835c-3.529-1.546-6-5.072-6-9.165 0-4.093 2.472-7.62 6.001-9.166C27.09 23.639 33.784 17 42 17h4c8.216 0 14.91 6.639 14.999 14.834C64.528 33.38 67 36.907 67 41c0 5.514-4.486 10-10 10-.73 0-1.478-.086-2.223-.256-.454-.104-.777-.508-.777-.975V32.231c0-.466.322-.87.777-.974 1.431-.328 2.868-.329 4.199-.061C58.559 24.401 52.898 19 46 19h-4c-6.898 0-12.559 5.401-12.976 12.196 1.33-.268 2.768-.267 4.199.061.455.104.777.508.777.974v17.538c0 .467-.323.871-.777.975-1.443.33-2.887.326-4.223.055V54c0 2.757 2.243 5 5 5h2v-1c0-.552.448-1 1-1h12c.552 0 1 .448 1 1v4c0 .552-.448 1-1 1z"
+                                            transform="translate(-524.000000, -649.000000) translate(524.000000, 649.000000)">
+                                        </path>
+                                    </svg>
+                                    <div class="name"> هدفون</div>
+
+                                </a>
+                                <a class="swiper-slide  ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 80">
+                                        <path
+                                            d="M55 36.001c-.641 0-1.281.244-1.769.731-.974.975-.974 2.561 0 3.536.974.973 2.561.974 3.537 0 .974-.975.974-2.561 0-3.536-.488-.487-1.128-.731-1.768-.731zm-.001 9.499c-.553 0-1-.448-1-1v-1.614c-.487-.11-.96-.302-1.395-.576l-1.897 1.897c-.391.391-1.024.391-1.415 0-.39-.39-.39-1.023 0-1.414l1.897-1.897c-.273-.436-.465-.908-.576-1.396H49c-.553 0-1-.448-1-1s.447-1 1-1h1.613c.11-.488.303-.96.576-1.396l-1.897-1.897c-.39-.391-.39-1.023 0-1.414.391-.391 1.024-.391 1.415 0l1.897 1.897c.435-.273.908-.466 1.395-.576V32.5c0-.552.447-1 1-1 .553 0 1 .448 1 1v1.614c.487.11.961.302 1.397.576l1.896-1.897c.391-.391 1.023-.391 1.414 0 .391.39.391 1.023 0 1.414l-1.896 1.897c.273.436.465.908.576 1.396h1.613c.553 0 1 .448 1 1s-.447 1-1 1h-1.613c-.111.488-.303.96-.576 1.396l1.896 1.897c.391.391.391 1.024 0 1.414-.391.391-1.023.391-1.414 0l-1.896-1.897c-.436.274-.909.466-1.397.576V44.5c0 .552-.447 1-1 1zM27 46c-.553 0-1-.448-1-1V32c0-.552.447-1 1-1 .552 0 1 .448 1 1v13c0 .552-.448 1-1 1zm26 10H40c-.553 0-1-.448-1-1s.447-1 1-1h13c.552 0 1 .448 1 1s-.448 1-1 1zm10.999 0h-5c-.553 0-1-.448-1-1s.447-1 1-1h5c.553 0 1 .448 1 1s-.447 1-1 1zM31 48h34V29H31v19zm-1 13c-.553 0-1-.448-1-1V21h-7c-.553 0-1-.448-1-1s.447-1 1-1h8c.552 0 1 .448 1 1v7h34.999c.553 0 1 .448 1 1v21c0 .552-.447 1-1 1H31v10c0 .552-.448 1-1 1z"
+                                            transform="translate(-1420.000000, -514.000000) translate(1420.000000, 514.000000)">
+                                        </path>
+                                    </svg>
+                                    <div class="name">کارت گرافیک</div>
+                                </a>
+
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-button-prev prev swiper-button-disabled"><i
+                                    class="fas fa-chevron-right"></i></div>
+                            <div class="swiper-button-next next swiper-button-disabled"><i
+                                    class="fas fa-chevron-left"></i></div>
+                            <!-- <div class="next"> <i class="fas fa-chevron-right"></i></div>
+                            <div class="prev"><i class="fas fa-chevron-left"></i></div> -->
+                        </div>
+
+                    </swiper-container>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="editor-suggesttion general-background py-5 ">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-11 mb-2 mb-lg-5">
+                    <div class="section-title">
+                        <h3>پیشنهاد سردبیر</h3>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="section-filter">
+                        <ul>
+                            <li class="section-filter-tab-editor-suggest active"> مطلب </li>
+                            <li class="section-filter-tab-editor-suggest"> ویدیو</li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-md-12 position-relative">
+
+                    <!-- //desktop-show  -->
+                    <swiper-container class="display-none-responsive">
+                        <div class="swiper suggestion-swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide swiper-slide-custom-height manAndMax">
+
+                                    <div class="general-box-style">
+                                        <a href="">
+                                            <div class="box-image">
+                                                <img src="./images/gac-new-ammonia-engine-cars-649e994f1e231e7d4e4c0151.webp"
+                                                    alt="">
+                                            </div>
+
+                                        </a>
+                                        <div class="content">
+
+                                            <a href="">
+                                                <div class="title">چین اولین موتور امونیاکی دنیا را برای خودرو های خود
+                                                    معرفی کرد</div>
+
+                                            </a>
+                                            <div class="details">
+                                                <div class="right">
+                                                    <div class="comment">
+                                                        <i class="fal fa-comment"></i>
+                                                        <span class="count">30</span>
+                                                    </div>
+                                                    <div class="date">
+                                                        <i class="far fa-calendar "></i>
+                                                        <span>1 روز پیش</span>
+                                                    </div>
+                                                </div>
+                                                <div class="left" onclick="showDrop(this.parentElement,event)">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="16" height="16" fill="var(--grey-3)">
+                                                        <g fill-rule="evenodd">
+                                                            <g>
+                                                                <path
+                                                                    d="M8 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zM2 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"
+                                                                    transform="translate(-1356.000000, -1286.000000) translate(1356.000000, 1286.000000)">
+                                                                </path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="drop-menu-item bg-white rounded list-group">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fal fa-bookmark"></i>
+                                                <div class="text mx-2">بوک مارک</div>
+                                            </div>
+                                            <div class="d-flex align-items-center ">
+                                                <i class="fas fa-share-nodes"></i>
+                                                <div class="text mx-2">اشتراک گزاری</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="swiper-slide swiper-slide-custom-height manAndMax">
+                                    <div class="general-box-style">
+                                        <a href="">
+                                            <div class="box-image">
+                                                <img src="./images/2021-3-mark-zuckerberg-ceo-suit-facebook-logo-background-638bb3e2fc121b5b0c1e1fe4.webp"
+                                                    alt="">
+                                            </div>
+
+                                        </a>
+                                        <div class="content">
+                                            <a href="">
+                                                <div class="title">رقیب گوگل پلی استور; فیسبوک دانلود اپلیکیشن را ممکن
+                                                    می
+                                                    کند
+                                                </div>
+
+                                            </a>
+                                            <div class="details">
+                                                <div class="right">
+                                                    <div class="comment">
+                                                        <i class="fal fa-comment"></i>
+                                                        <span class="count">30</span>
+                                                    </div>
+                                                    <div class="date">
+                                                        <i class="far fa-calendar "></i>
+                                                        <span>1 روز پیش</span>
+                                                    </div>
+                                                </div>
+                                                <div class="left" onclick="showDrop(this.parentElement)">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="16" height="16" fill="var(--grey-3)">
+                                                        <g fill-rule="evenodd">
+                                                            <g>
+                                                                <path
+                                                                    d="M8 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zM2 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"
+                                                                    transform="translate(-1356.000000, -1286.000000) translate(1356.000000, 1286.000000)">
+                                                                </path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop-menu-item bg-white rounded list-group">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fal fa-bookmark"></i>
+                                                <div class="text mx-2">بوک مارک</div>
+                                            </div>
+                                            <div class="d-flex align-items-center ">
+                                                <i class="fas fa-share-nodes"></i>
+                                                <div class="text mx-2">اشتراک گزاری</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide swiper-slide-custom-height manAndMax">
+                                    <div class="general-box-style">
+                                        <a href="">
+                                            <div class="box-image">
+                                                <img src="./images/2022-9-tim-cook-apple-ceo-face-far-out-event-638bb8861d67bb742b22c968.webp"
+                                                    alt="">
+                                            </div>
+
+                                        </a>
+                                        <div class="content">
+                                            <a href="">
+                                                <div class="title">اپل خطاب به دادگاه های اروپا: نمی خواهیم تقییر دیگری
+                                                    در
+                                                    اپ استور اعمال کنیم</div>
+
+                                            </a>
+                                            <div class="details">
+                                                <div class="right">
+                                                    <div class="comment">
+                                                        <i class="fal fa-comment"></i>
+                                                        <span class="count">30</span>
+                                                    </div>
+                                                    <div class="date">
+                                                        <i class="far fa-calendar "></i>
+                                                        <span>1 روز پیش</span>
+                                                    </div>
+                                                </div>
+                                                <div class="left" onclick="showDrop(this.parentElement)">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="16" height="16" fill="var(--grey-3)">
+                                                        <g fill-rule="evenodd">
+                                                            <g>
+                                                                <path
+                                                                    d="M8 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zM2 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"
+                                                                    transform="translate(-1356.000000, -1286.000000) translate(1356.000000, 1286.000000)">
+                                                                </path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop-menu-item bg-white rounded list-group">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fal fa-bookmark"></i>
+                                                <div class="text mx-2">بوک مارک</div>
+                                            </div>
+                                            <div class="d-flex align-items-center ">
+                                                <i class="fas fa-share-nodes"></i>
+                                                <div class="text mx-2">اشتراک گزاری</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide swiper-slide-custom-height manAndMax">
+                                    <div class="general-box-style">
+
+                                        <a href="">
+                                            <div class="box-image">
+                                                <img src="./images/google-pixel-fold-inner-screen-man-649d1f751e231e7d4e4bfe5c.webp"
+                                                    alt="">
+                                            </div>
+                                        </a>
+                                        <div class="content">
+
+                                            <a href="">
+                                                <div class="title">پیکسل فولد نرسیده دچار مشکل شد</div>
+                                            </a>
+                                            <div class="details">
+                                                <div class="right">
+                                                    <div class="comment">
+                                                        <i class="fal fa-comment"></i>
+                                                        <span class="count">30</span>
+                                                    </div>
+                                                    <div class="date">
+                                                        <i class="far fa-calendar "></i>
+                                                        <span>1 روز پیش</span>
+                                                    </div>
+                                                </div>
+                                                <div class="left" onclick="showDrop(this.parentElement)">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="16" height="16" fill="var(--grey-3)">
+                                                        <g fill-rule="evenodd">
+                                                            <g>
+                                                                <path
+                                                                    d="M8 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zM2 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"
+                                                                    transform="translate(-1356.000000, -1286.000000) translate(1356.000000, 1286.000000)">
+                                                                </path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop-menu-item bg-white rounded list-group">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fal fa-bookmark"></i>
+                                                <div class="text mx-2">بوک مارک</div>
+                                            </div>
+                                            <div class="d-flex align-items-center ">
+                                                <i class="fas fa-share-nodes"></i>
+                                                <div class="text mx-2">اشتراک گزاری</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-custom-height manAndMax">
+                                    <div class="general-box-style">
+
+                                        <div class="box-image">
+                                            <img src="./images/google-pixel-fold-phone-two-649d1e901e231e7d4e4bfe51.webp"
+                                                alt="">
+                                        </div>
+                                        <div class="content">
+
+                                            <div class="title">معرفی گوگل پیکس 2</div>
+                                            <div class="details">
+                                                <div class="right">
+                                                    <div class="comment">
+                                                        <i class="fas fa-comment"></i>
+                                                        <span class="count">30</span>
+                                                    </div>
+                                                    <div class="date">
+                                                        <i class="fas fa-calendar "></i>
+                                                        <span>1 روز پیش</span>
+                                                    </div>
+                                                </div>
+                                                <div class="left" onclick="showDrop(this.parentElement)">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="16" height="16" fill="var(--grey-3)">
+                                                        <g fill-rule="evenodd">
+                                                            <g>
+                                                                <path
+                                                                    d="M8 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zM2 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"
+                                                                    transform="translate(-1356.000000, -1286.000000) translate(1356.000000, 1286.000000)">
+                                                                </path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop-menu-item bg-white rounded list-group">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fal fa-bookmark"></i>
+                                                <div class="text mx-2">بوک مارک</div>
+                                            </div>
+                                            <div class="d-flex align-items-center ">
+                                                <i class="fas fa-share-nodes"></i>
+                                                <div class="text mx-2">اشتراک گزاری</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+
+
+                            </div>
+
+                            <div class="swiper-button-prev prev swiper-button-disabled"><i
+                                    class="fas fa-chevron-right"></i></div>
+                            <div class="swiper-button-next next swiper-button-disabled"><i
+                                    class="fas fa-chevron-left"></i></div>
+
+                            <div class="swiper-scrollbar"></div>
+
+                        </div>
+
+                    </swiper-container>
+
+
+                    <!-- //responsive-show -->
+                    <div class="responsive-item-show w-100  ">
+                        <div class="wrapper d-flex align-items-center ">
+                            <!-- Slides -->
+                            <div class="item">
+
+                                <div class="general-box-style">
+                                    <a href="">
+                                        <div class="box-image">
+                                            <img src="./images/gac-new-ammonia-engine-cars-649e994f1e231e7d4e4c0151.webp"
+                                                alt="">
+                                        </div>
+
+                                    </a>
+                                    <div class="content">
+
+                                        <a href="">
+                                            <div class="title">چین اولین موتور امونیاکی دنیا را برای خودرو های خود
+                                                معرفی کرد</div>
+
+                                        </a>
+                                        <div class="details">
+                                            <div class="right">
+                                                <div class="comment">
+                                                    <i class="fal fa-comment"></i>
+                                                    <span class="count">30</span>
+                                                </div>
+                                                <div class="date">
+                                                    <i class="far fa-calendar "></i>
+                                                    <span>1 روز پیش</span>
+                                                </div>
+                                            </div>
+                                            <div class="left" onclick="showDrop(this.parentElement)">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                                                    height="16" fill="var(--grey-3)">
+                                                    <g fill-rule="evenodd">
+                                                        <g>
+                                                            <path
+                                                                d="M8 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zM2 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"
+                                                                transform="translate(-1356.000000, -1286.000000) translate(1356.000000, 1286.000000)">
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="drop-menu-item bg-white rounded list-group">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="fal fa-bookmark"></i>
+                                            <div class="text mx-2">بوک مارک</div>
+                                        </div>
+                                        <div class="d-flex align-items-center ">
+                                            <i class="fas fa-share-nodes"></i>
+                                            <div class="text mx-2">اشتراک گزاری</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <div class="item">
+                                <div class="general-box-style">
+                                    <a href="">
+                                        <div class="box-image">
+                                            <img src="./images/2021-3-mark-zuckerberg-ceo-suit-facebook-logo-background-638bb3e2fc121b5b0c1e1fe4.webp"
+                                                alt="">
+                                        </div>
+
+                                    </a>
+                                    <div class="content">
+                                        <a href="">
+                                            <div class="title">رقیب گوگل پلی استور; فیسبوک دانلود اپلیکیشن را ممکن
+                                                می
+                                                کند
+                                            </div>
+
+                                        </a>
+                                        <div class="details">
+                                            <div class="right">
+                                                <div class="comment">
+                                                    <i class="fal fa-comment"></i>
+                                                    <span class="count">30</span>
+                                                </div>
+                                                <div class="date">
+                                                    <i class="far fa-calendar "></i>
+                                                    <span>1 روز پیش</span>
+                                                </div>
+                                            </div>
+                                            <div class="left" onclick="showDrop(this.parentElement)">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                                                    height="16" fill="var(--grey-3)">
+                                                    <g fill-rule="evenodd">
+                                                        <g>
+                                                            <path
+                                                                d="M8 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zM2 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"
+                                                                transform="translate(-1356.000000, -1286.000000) translate(1356.000000, 1286.000000)">
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="drop-menu-item bg-white rounded list-group">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="fal fa-bookmark"></i>
+                                            <div class="text mx-2">بوک مارک</div>
+                                        </div>
+                                        <div class="d-flex align-items-center ">
+                                            <i class="fas fa-share-nodes"></i>
+                                            <div class="text mx-2">اشتراک گزاری</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="item">
+                                <div class="general-box-style">
+                                    <a href="">
+                                        <div class="box-image">
+                                            <img src="./images/2022-9-tim-cook-apple-ceo-face-far-out-event-638bb8861d67bb742b22c968.webp"
+                                                alt="">
+                                        </div>
+
+                                    </a>
+                                    <div class="content">
+                                        <a href="">
+                                            <div class="title">اپل خطاب به دادگاه های اروپا: نمی خواهیم تقییر دیگری
+                                                در
+                                                اپ استور اعمال کنیم</div>
+
+                                        </a>
+                                        <div class="details">
+                                            <div class="right">
+                                                <div class="comment">
+                                                    <i class="fal fa-comment"></i>
+                                                    <span class="count">30</span>
+                                                </div>
+                                                <div class="date">
+                                                    <i class="far fa-calendar "></i>
+                                                    <span>1 روز پیش</span>
+                                                </div>
+                                            </div>
+                                            <div class="left" onclick="showDrop(this.parentElement)">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                                                    height="16" fill="var(--grey-3)">
+                                                    <g fill-rule="evenodd">
+                                                        <g>
+                                                            <path
+                                                                d="M8 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zM2 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"
+                                                                transform="translate(-1356.000000, -1286.000000) translate(1356.000000, 1286.000000)">
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="drop-menu-item bg-white rounded list-group">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="fal fa-bookmark"></i>
+                                            <div class="text mx-2">بوک مارک</div>
+                                        </div>
+                                        <div class="d-flex align-items-center ">
+                                            <i class="fas fa-share-nodes"></i>
+                                            <div class="text mx-2">اشتراک گزاری</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="item">
+                                <div class="general-box-style">
+
+                                    <a href="">
+                                        <div class="box-image">
+                                            <img src="./images/google-pixel-fold-inner-screen-man-649d1f751e231e7d4e4bfe5c.webp"
+                                                alt="">
+                                        </div>
+                                    </a>
+                                    <div class="content">
+
+                                        <a href="">
+                                            <div class="title">پیکسل فولد نرسیده دچار مشکل شد</div>
+                                        </a>
+                                        <div class="details">
+                                            <div class="right">
+                                                <div class="comment">
+                                                    <i class="fal fa-comment"></i>
+                                                    <span class="count">30</span>
+                                                </div>
+                                                <div class="date">
+                                                    <i class="far fa-calendar "></i>
+                                                    <span>1 روز پیش</span>
+                                                </div>
+                                            </div>
+                                            <div class="left" onclick="showDrop(this.parentElement)">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                                                    height="16" fill="var(--grey-3)">
+                                                    <g fill-rule="evenodd">
+                                                        <g>
+                                                            <path
+                                                                d="M8 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zM2 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"
+                                                                transform="translate(-1356.000000, -1286.000000) translate(1356.000000, 1286.000000)">
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="drop-menu-item bg-white rounded list-group">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="fal fa-bookmark"></i>
+                                            <div class="text mx-2">بوک مارک</div>
+                                        </div>
+                                        <div class="d-flex align-items-center ">
+                                            <i class="fas fa-share-nodes"></i>
+                                            <div class="text mx-2">اشتراک گزاری</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="general-box-style">
+
+                                    <div class="box-image">
+                                        <img src="./images/google-pixel-fold-phone-two-649d1e901e231e7d4e4bfe51.webp"
+                                            alt="">
+                                    </div>
+                                    <div class="content">
+
+                                        <div class="title">معرفی گوگل پیکس 2</div>
+                                        <div class="details">
+                                            <div class="right">
+                                                <div class="comment">
+                                                    <i class="fas fa-comment"></i>
+                                                    <span class="count">30</span>
+                                                </div>
+                                                <div class="date">
+                                                    <i class="fas fa-calendar "></i>
+                                                    <span>1 روز پیش</span>
+                                                </div>
+                                            </div>
+                                            <div class="left" onclick="showDrop(this.parentElement)">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                                                    height="16" fill="var(--grey-3)">
+                                                    <g fill-rule="evenodd">
+                                                        <g>
+                                                            <path
+                                                                d="M8 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zM2 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"
+                                                                transform="translate(-1356.000000, -1286.000000) translate(1356.000000, 1286.000000)">
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="drop-menu-item bg-white rounded list-group">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="fal fa-bookmark"></i>
+                                            <div class="text mx-2">بوک مارک</div>
+                                        </div>
+                                        <div class="d-flex align-items-center ">
+                                            <i class="fas fa-share-nodes"></i>
+                                            <div class="text mx-2">اشتراک گزاری</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="best-articles  py-5 ">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 col-md-12 mb-5">
+                    <div class="section-title d-flex align-items-center justify-content-between">
+                        <h3>بهترین مقالات </h3>
+                        <a href="" class="">مشاهده همه<i class="fas fa-arrow-left"></i> </a>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="section-filter responsive">
+                            <ul>
+                                <li class="section-filter-tab-best-article active">پر بازدید ترین های ماه</li>
+                                <li class="section-filter-tab-best-article">محبوب ترین</li>
+                                <li class="section-filter-tab-best-article">پر بحث ترین</li>
+                                <li class="section-filter-tab-best-article">آموزش</li>
+                                <li class="section-filter-tab-best-article">راهنمای خرید</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-12 position-relative">
+                    <!-- //desktop-show -->
+                    <swiper-container class="display-none-responsive">
+                        <div class="swiper suggestion-swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide swiper-slide-custom-height">
+
+                                    <div class="general-box-style">
+                                        <a href="">
+                                            <div class="box-image">
+                                                <img src="./images/gac-new-ammonia-engine-cars-649e994f1e231e7d4e4c0151.webp"
+                                                    alt="">
+                                            </div>
+
+                                        </a>
+                                        <div class="content">
+
+                                            <a href="">
+                                                <div class="title">چین اولین موتور امونیاکی دنیا را برای خودرو های خود
+                                                    معرفی کرد</div>
+
+                                            </a>
+                                            <div class="details">
+                                                <div class="right">
+                                                    <div class="comment">
+                                                        <i class="fal fa-comment"></i>
+                                                        <span class="count">30</span>
+                                                    </div>
+                                                    <div class="date">
+                                                        <i class="far fa-calendar "></i>
+                                                        <span>1 روز پیش</span>
+                                                    </div>
+                                                </div>
+                                                <div class="left" onclick="showDrop(this.parentElement)">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="16" height="16" fill="var(--grey-3)">
+                                                        <g fill-rule="evenodd">
+                                                            <g>
+                                                                <path
+                                                                    d="M8 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zM2 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"
+                                                                    transform="translate(-1356.000000, -1286.000000) translate(1356.000000, 1286.000000)">
+                                                                </path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="drop-menu-item bg-white rounded list-group">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fal fa-bookmark"></i>
+                                                <div class="text mx-2">بوک مارک</div>
+                                            </div>
+                                            <div class="d-flex align-items-center ">
+                                                <i class="fas fa-share-nodes"></i>
+                                                <div class="text mx-2">اشتراک گزاری</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="swiper-slide swiper-slide-custom-height">
+                                    <div class="general-box-style">
+                                        <a href="">
+                                            <div class="box-image">
+                                                <img src="./images/2021-3-mark-zuckerberg-ceo-suit-facebook-logo-background-638bb3e2fc121b5b0c1e1fe4.webp"
+                                                    alt="">
+                                            </div>
+
+                                        </a>
+                                        <div class="content">
+                                            <a href="">
+                                                <div class="title">رقیب گوگل پلی استور; فیسبوک دانلود اپلیکیشن را ممکن
+                                                    می
+                                                    کند
+                                                </div>
+
+                                            </a>
+                                            <div class="details">
+                                                <div class="right">
+                                                    <div class="comment">
+                                                        <i class="fal fa-comment"></i>
+                                                        <span class="count">30</span>
+                                                    </div>
+                                                    <div class="date">
+                                                        <i class="far fa-calendar "></i>
+                                                        <span>1 روز پیش</span>
+                                                    </div>
+                                                </div>
+                                                <div class="left" onclick="showDrop(this.parentElement)">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="16" height="16" fill="var(--grey-3)">
+                                                        <g fill-rule="evenodd">
+                                                            <g>
+                                                                <path
+                                                                    d="M8 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zM2 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"
+                                                                    transform="translate(-1356.000000, -1286.000000) translate(1356.000000, 1286.000000)">
+                                                                </path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop-menu-item bg-white rounded list-group">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fal fa-bookmark"></i>
+                                                <div class="text mx-2">بوک مارک</div>
+                                            </div>
+                                            <div class="d-flex align-items-center ">
+                                                <i class="fas fa-share-nodes"></i>
+                                                <div class="text mx-2">اشتراک گزاری</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide swiper-slide-custom-height ">
+                                    <div class="general-box-style">
+                                        <a href="">
+                                            <div class="box-image">
+                                                <img src="./images/2022-9-tim-cook-apple-ceo-face-far-out-event-638bb8861d67bb742b22c968.webp"
+                                                    alt="">
+                                            </div>
+
+                                        </a>
+                                        <div class="content">
+                                            <a href="">
+                                                <div class="title">اپل خطاب به دادگاه های اروپا: نمی خواهیم تقییر دیگری
+                                                    در
+                                                    اپ استور اعمال کنیم</div>
+
+                                            </a>
+                                            <div class="details">
+                                                <div class="right">
+                                                    <div class="comment">
+                                                        <i class="fal fa-comment"></i>
+                                                        <span class="count">30</span>
+                                                    </div>
+                                                    <div class="date">
+                                                        <i class="far fa-calendar "></i>
+                                                        <span>1 روز پیش</span>
+                                                    </div>
+                                                </div>
+                                                <div class="left" onclick="showDrop(this.parentElement)">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="16" height="16" fill="var(--grey-3)">
+                                                        <g fill-rule="evenodd">
+                                                            <g>
+                                                                <path
+                                                                    d="M8 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zM2 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"
+                                                                    transform="translate(-1356.000000, -1286.000000) translate(1356.000000, 1286.000000)">
+                                                                </path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop-menu-item bg-white rounded list-group">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fal fa-bookmark"></i>
+                                                <div class="text mx-2">بوک مارک</div>
+                                            </div>
+                                            <div class="d-flex align-items-center ">
+                                                <i class="fas fa-share-nodes"></i>
+                                                <div class="text mx-2">اشتراک گزاری</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide swiper-slide-custom-height">
+                                    <div class="general-box-style">
+
+                                        <a href="">
+                                            <div class="box-image">
+                                                <img src="./images/google-pixel-fold-inner-screen-man-649d1f751e231e7d4e4bfe5c.webp"
+                                                    alt="">
+                                            </div>
+                                        </a>
+                                        <div class="content">
+
+                                            <a href="">
+                                                <div class="title">پیکسل فولد نرسیده دچار مشکل شد</div>
+                                            </a>
+                                            <div class="details">
+                                                <div class="right">
+                                                    <div class="comment">
+                                                        <i class="fal fa-comment"></i>
+                                                        <span class="count">30</span>
+                                                    </div>
+                                                    <div class="date">
+                                                        <i class="far fa-calendar "></i>
+                                                        <span>1 روز پیش</span>
+                                                    </div>
+                                                </div>
+                                                <div class="left" onclick="showDrop(this.parentElement)">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="16" height="16" fill="var(--grey-3)">
+                                                        <g fill-rule="evenodd">
+                                                            <g>
+                                                                <path
+                                                                    d="M8 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zM2 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"
+                                                                    transform="translate(-1356.000000, -1286.000000) translate(1356.000000, 1286.000000)">
+                                                                </path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop-menu-item bg-white rounded list-group">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fal fa-bookmark"></i>
+                                                <div class="text mx-2">بوک مارک</div>
+                                            </div>
+                                            <div class="d-flex align-items-center ">
+                                                <i class="fas fa-share-nodes"></i>
+                                                <div class="text mx-2">اشتراک گزاری</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-custom-height">
+                                    <div class="general-box-style">
+
+                                        <div class="box-image">
+                                            <img src="./images/google-pixel-fold-phone-two-649d1e901e231e7d4e4bfe51.webp"
+                                                alt="">
+                                        </div>
+                                        <div class="content">
+
+                                            <div class="title">معرفی گوگل پیکس 2</div>
+                                            <div class="details">
+                                                <div class="right">
+                                                    <div class="comment">
+                                                        <i class="fal fa-comment"></i>
+                                                        <span class="count">30</span>
+                                                    </div>
+                                                    <div class="date">
+                                                        <i class="far fa-calendar "></i>
+                                                        <span>1 روز پیش</span>
+                                                    </div>
+                                                </div>
+                                                <div class="left" onclick="showDrop(this.parentElement)">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                        width="16" height="16" fill="var(--grey-3)">
+                                                        <g fill-rule="evenodd">
+                                                            <g>
+                                                                <path
+                                                                    d="M8 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zM2 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"
+                                                                    transform="translate(-1356.000000, -1286.000000) translate(1356.000000, 1286.000000)">
+                                                                </path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop-menu-item bg-white rounded list-group">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fal fa-bookmark"></i>
+                                                <div class="text mx-2">بوک مارک</div>
+                                            </div>
+                                            <div class="d-flex align-items-center ">
+                                                <i class="fas fa-share-nodes"></i>
+                                                <div class="text mx-2">اشتراک گزاری</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+
+
+                            </div>
+
+
+                            <div class="swiper-button-prev prev swiper-button-disabled"><i
+                                    class="fas fa-chevron-right"></i></div>
+                            <div class="swiper-button-next next swiper-button-disabled"><i
+                                    class="fas fa-chevron-left"></i></div>
+
+                            <div class="swiper-scrollbar"></div>
+
+
+                        </div>
+
+                    </swiper-container>
+                    <!-- //responsive-show -->
+                    <div class="responsive-item-show w-100  ">
+                        <div class="wrapper d-flex align-items-center ">
+                            <!-- Slides -->
+                            <div class="item">
+
+                                <div class="general-box-style">
+                                    <a href="">
+                                        <div class="box-image">
+                                            <img src="./images/gac-new-ammonia-engine-cars-649e994f1e231e7d4e4c0151.webp"
+                                                alt="">
+                                        </div>
+
+                                    </a>
+                                    <div class="content">
+
+                                        <a href="">
+                                            <div class="title">چین اولین موتور امونیاکی دنیا را برای خودرو های خود
+                                                معرفی کرد</div>
+
+                                        </a>
+                                        <div class="details">
+                                            <div class="right">
+                                                <div class="comment">
+                                                    <i class="fal fa-comment"></i>
+                                                    <span class="count">30</span>
+                                                </div>
+                                                <div class="date">
+                                                    <i class="far fa-calendar "></i>
+                                                    <span>1 روز پیش</span>
+                                                </div>
+                                            </div>
+                                            <div class="left" onclick="showDrop(this.parentElement)">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                                                    height="16" fill="var(--grey-3)">
+                                                    <g fill-rule="evenodd">
+                                                        <g>
+                                                            <path
+                                                                d="M8 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zM2 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"
+                                                                transform="translate(-1356.000000, -1286.000000) translate(1356.000000, 1286.000000)">
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="drop-menu-item bg-white rounded list-group">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="fal fa-bookmark"></i>
+                                            <div class="text mx-2">بوک مارک</div>
+                                        </div>
+                                        <div class="d-flex align-items-center ">
+                                            <i class="fas fa-share-nodes"></i>
+                                            <div class="text mx-2">اشتراک گزاری</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <div class="item">
+                                <div class="general-box-style">
+                                    <a href="">
+                                        <div class="box-image">
+                                            <img src="./images/2021-3-mark-zuckerberg-ceo-suit-facebook-logo-background-638bb3e2fc121b5b0c1e1fe4.webp"
+                                                alt="">
+                                        </div>
+
+                                    </a>
+                                    <div class="content">
+                                        <a href="">
+                                            <div class="title">رقیب گوگل پلی استور; فیسبوک دانلود اپلیکیشن را ممکن
+                                                می
+                                                کند
+                                            </div>
+
+                                        </a>
+                                        <div class="details">
+                                            <div class="right">
+                                                <div class="comment">
+                                                    <i class="fal fa-comment"></i>
+                                                    <span class="count">30</span>
+                                                </div>
+                                                <div class="date">
+                                                    <i class="far fa-calendar "></i>
+                                                    <span>1 روز پیش</span>
+                                                </div>
+                                            </div>
+                                            <div class="left" onclick="showDrop(this.parentElement)">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                                                    height="16" fill="var(--grey-3)">
+                                                    <g fill-rule="evenodd">
+                                                        <g>
+                                                            <path
+                                                                d="M8 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zM2 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"
+                                                                transform="translate(-1356.000000, -1286.000000) translate(1356.000000, 1286.000000)">
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="drop-menu-item bg-white rounded list-group">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="fal fa-bookmark"></i>
+                                            <div class="text mx-2">بوک مارک</div>
+                                        </div>
+                                        <div class="d-flex align-items-center ">
+                                            <i class="fas fa-share-nodes"></i>
+                                            <div class="text mx-2">اشتراک گزاری</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="item">
+                                <div class="general-box-style">
+                                    <a href="">
+                                        <div class="box-image">
+                                            <img src="./images/2022-9-tim-cook-apple-ceo-face-far-out-event-638bb8861d67bb742b22c968.webp"
+                                                alt="">
+                                        </div>
+
+                                    </a>
+                                    <div class="content">
+                                        <a href="">
+                                            <div class="title">اپل خطاب به دادگاه های اروپا: نمی خواهیم تقییر دیگری
+                                                در
+                                                اپ استور اعمال کنیم</div>
+
+                                        </a>
+                                        <div class="details">
+                                            <div class="right">
+                                                <div class="comment">
+                                                    <i class="fal fa-comment"></i>
+                                                    <span class="count">30</span>
+                                                </div>
+                                                <div class="date">
+                                                    <i class="far fa-calendar "></i>
+                                                    <span>1 روز پیش</span>
+                                                </div>
+                                            </div>
+                                            <div class="left" onclick="showDrop(this.parentElement)">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                                                    height="16" fill="var(--grey-3)">
+                                                    <g fill-rule="evenodd">
+                                                        <g>
+                                                            <path
+                                                                d="M8 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zM2 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"
+                                                                transform="translate(-1356.000000, -1286.000000) translate(1356.000000, 1286.000000)">
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="drop-menu-item bg-white rounded list-group">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="fal fa-bookmark"></i>
+                                            <div class="text mx-2">بوک مارک</div>
+                                        </div>
+                                        <div class="d-flex align-items-center ">
+                                            <i class="fas fa-share-nodes"></i>
+                                            <div class="text mx-2">اشتراک گزاری</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="item">
+                                <div class="general-box-style">
+
+                                    <a href="">
+                                        <div class="box-image">
+                                            <img src="./images/google-pixel-fold-inner-screen-man-649d1f751e231e7d4e4bfe5c.webp"
+                                                alt="">
+                                        </div>
+                                    </a>
+                                    <div class="content">
+
+                                        <a href="">
+                                            <div class="title">پیکسل فولد نرسیده دچار مشکل شد</div>
+                                        </a>
+                                        <div class="details">
+                                            <div class="right">
+                                                <div class="comment">
+                                                    <i class="fal fa-comment"></i>
+                                                    <span class="count">30</span>
+                                                </div>
+                                                <div class="date">
+                                                    <i class="far fa-calendar "></i>
+                                                    <span>1 روز پیش</span>
+                                                </div>
+                                            </div>
+                                            <div class="left" onclick="showDrop(this.parentElement)">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                                                    height="16" fill="var(--grey-3)">
+                                                    <g fill-rule="evenodd">
+                                                        <g>
+                                                            <path
+                                                                d="M8 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zM2 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"
+                                                                transform="translate(-1356.000000, -1286.000000) translate(1356.000000, 1286.000000)">
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="drop-menu-item bg-white rounded list-group">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="fal fa-bookmark"></i>
+                                            <div class="text mx-2">بوک مارک</div>
+                                        </div>
+                                        <div class="d-flex align-items-center ">
+                                            <i class="fas fa-share-nodes"></i>
+                                            <div class="text mx-2">اشتراک گزاری</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="general-box-style">
+
+                                    <div class="box-image">
+                                        <img src="./images/google-pixel-fold-phone-two-649d1e901e231e7d4e4bfe51.webp"
+                                            alt="">
+                                    </div>
+                                    <div class="content">
+
+                                        <div class="title">معرفی گوگل پیکس 2</div>
+                                        <div class="details">
+                                            <div class="right">
+                                                <div class="comment">
+                                                    <i class="fas fa-comment"></i>
+                                                    <span class="count">30</span>
+                                                </div>
+                                                <div class="date">
+                                                    <i class="fas fa-calendar "></i>
+                                                    <span>1 روز پیش</span>
+                                                </div>
+                                            </div>
+                                            <div class="left" onclick="showDrop(this.parentElement)">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                                                    height="16" fill="var(--grey-3)">
+                                                    <g fill-rule="evenodd">
+                                                        <g>
+                                                            <path
+                                                                d="M8 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zM2 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"
+                                                                transform="translate(-1356.000000, -1286.000000) translate(1356.000000, 1286.000000)">
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="drop-menu-item bg-white rounded list-group">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="fal fa-bookmark"></i>
+                                            <div class="text mx-2">بوک مارک</div>
+                                        </div>
+                                        <div class="d-flex align-items-center ">
+                                            <i class="fas fa-share-nodes"></i>
+                                            <div class="text mx-2">اشتراک گزاری</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="best-articles general-background py-5 ">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-12 mb-5">
+                    <div class="section-title d-flex align-items-center justify-content-between">
+                        <h3>بهترین مقالات </h3>
+
+                    </div>
+
+                    <div class="col-12 ">
+                        <div class="section-filter responsive">
+                            <ul>
+                                <li class="section-filter-tab-aniac-suggest active">آموزش های کاربردی </li>
+                                <li class="section-filter-tab-aniac-suggest">راهنمای خرید</li>
+                                <li class="section-filter-tab-aniac-suggest">موبایل</li>
+                                <li class="section-filter-tab-aniac-suggest">سخت افزار</li>
+                                <li class="section-filter-tab-aniac-suggest">شاتر</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-12 position-relative">
+                    <swiper-container class="display-none-responsive">
+                        <div class="swiper suggestion-swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide swiper-slide-custom-height">
+
+                                    <div class="general-box-inside-style">
+                                        <a href="">
+                                            <div class="box-image">
+                                                <img src="./images/2022-11-instagram.webp" alt="">
+                                            </div>
+                                            <div class="shadowItem"></div>
+                                            <div class="title">دانلود استوری اینستاگرام ; بهترین اپ ها و سایت ها</div>
+
+                                            <div class="details">
+
+                                                <div class="comment">
+                                                    <i class="fal fa-clock"></i>
+                                                    <span class="count">مطالعه 13 دقیقه</span>
+                                                </div>
+                                                <div class="date">
+                                                    <i class="far fa-calendar "></i>
+                                                    <span>1 روز پیش</span>
+                                                </div>
+
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="swiper-slide swiper-slide-custom-height">
+
+                                    <div class="general-box-inside-style">
+                                        <a href="">
+                                            <div class="box-image">
+                                                <img src="./images/2022-11-instagram-highlight.webp" alt="">
+                                            </div>
+                                            <div class="shadowItem"></div>
+                                            <div class="title"> آموزش ساخت کاور هایلایت اینستاگرام
+                                            </div>
+
+                                            <div class="details">
+
+                                                <div class="comment">
+                                                    <i class="fal fa-clock"></i>
+                                                    <span class="count">مطالعه 10 دقیقه</span>
+                                                </div>
+                                                <div class="date">
+                                                    <i class="far fa-calendar "></i>
+                                                    <span>3 روز پیش</span>
+                                                </div>
+
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="swiper-slide swiper-slide-custom-height">
+
+                                    <div class="general-box-inside-style">
+                                        <a href="">
+                                            <div class="box-image">
+                                                <img src="./images/2022-7-create-new-apple-id-638b21892806e1a2050be231.webp"
+                                                    alt="">
+                                            </div>
+                                            <div class="shadowItem"></div>
+                                            <div class="title">آموزش ساخت Apple ID به روش جدید
+                                            </div>
+
+                                            <div class="details">
+
+                                                <div class="comment">
+                                                    <i class="fal fa-clock"></i>
+                                                    <span class="count">مطالعه 15 دقیقه</span>
+                                                </div>
+                                                <div class="date">
+                                                    <i class="far fa-calendar "></i>
+                                                    <span>2 روز پیش</span>
+                                                </div>
+
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="swiper-slide swiper-slide-custom-height">
+
+                                    <div class="general-box-inside-style">
+                                        <a href="">
+                                            <div class="box-image">
+                                                <img src="./images/2020-4-94774b6b-9532-471e-875f-4cae4a4bed48-638baf0b8b369136d4583913.webp"
+                                                    alt="">
+                                            </div>
+                                            <div class="shadowItem"></div>
+                                            <div class="title">چگونه جیمیل یکبار مصرف بسازیم
+                                            </div>
+
+                                            <div class="details">
+
+                                                <div class="comment">
+                                                    <i class="fal fa-clock"></i>
+                                                    <span class="count">مطالعه 5 دقیقه</span>
+                                                </div>
+                                                <div class="date">
+                                                    <i class="far fa-calendar "></i>
+                                                    <span>2 روز پیش</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="swiper-slide swiper-slide-custom-height">
+
+                                    <div class="general-box-inside-style">
+                                        <a href="">
+                                            <div class="box-image">
+                                                <img src="./images/2022-8-what-is-virtual-number-how-to-make-one-638bb4fd1d67bb742b228617.webp"
+                                                    alt="">
+                                            </div>
+                                            <div class="shadowItem"></div>
+                                            <div class="title">شماره مجازی چیست و چگونه میتوانیم برای خود شماره مجازی
+                                                داشته باشیم
+                                            </div>
+
+                                            <div class="details">
+
+                                                <div class="comment">
+                                                    <i class="fal fa-clock"></i>
+                                                    <span class="count">30</span>
+                                                </div>
+                                                <div class="date">
+                                                    <i class="far fa-calendar "></i>
+                                                    <span>1 روز پیش</span>
+                                                </div>
+
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+                            <div class="swiper-button-prev prev swiper-button-disabled"><i
+                                    class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="swiper-button-next next swiper-button-disabled"><i
+                                    class="fas fa-chevron-left"></i>
+                            </div>
+                            <div class="swiper-scrollbar "></div>
+
+
+                        </div>
+
+                    </swiper-container>
+
+                    <div class="responsive-item-show w-100 inside-style  ">
+                        <div class="wrapper d-flex align-items-center ">
+                            <!-- Slides -->
+                            <div class="item">
+
+                                <div class="general-box-inside-style">
+                                    <a href="">
+                                        <div class="box-image">
+                                            <img src="./images/2022-11-instagram.webp" alt="">
+                                        </div>
+                                        <div class="shadowItem"></div>
+                                        <div class="title">دانلود استوری اینستاگرام ; بهترین اپ ها و سایت ها</div>
+
+                                        <div class="details">
+
+                                            <div class="comment">
+                                                <i class="fal fa-clock"></i>
+                                                <span class="count">مطالعه 13 دقیقه</span>
+                                            </div>
+                                            <div class="date">
+                                                <i class="far fa-calendar "></i>
+                                                <span>1 روز پیش</span>
+                                            </div>
+
+                                        </div>
+                                    </a>
+
+                                </div>
+
+
+
+                            </div>
+                            <div class="item">
+                                <div class="general-box-inside-style">
+                                    <a href="">
+                                        <div class="box-image">
+                                            <img src="./images/2022-11-instagram-highlight.webp" alt="">
+                                        </div>
+                                        <div class="shadowItem"></div>
+                                        <div class="title"> آموزش ساخت کاور هایلایت اینستاگرام
+                                        </div>
+
+                                        <div class="details">
+
+                                            <div class="comment">
+                                                <i class="fal fa-clock"></i>
+                                                <span class="count">مطالعه 10 دقیقه</span>
+                                            </div>
+                                            <div class="date">
+                                                <i class="far fa-calendar "></i>
+                                                <span>3 روز پیش</span>
+                                            </div>
+
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+                            <div class="item">
+
+                                <div class="general-box-inside-style">
+                                    <a href="">
+                                        <div class="box-image">
+                                            <img src="./images/2022-7-create-new-apple-id-638b21892806e1a2050be231.webp"
+                                                alt="">
+                                        </div>
+                                        <div class="shadowItem"></div>
+                                        <div class="title">آموزش ساخت Apple ID به روش جدید
+                                        </div>
+
+                                        <div class="details">
+
+                                            <div class="comment">
+                                                <i class="fal fa-clock"></i>
+                                                <span class="count">مطالعه 15 دقیقه</span>
+                                            </div>
+                                            <div class="date">
+                                                <i class="far fa-calendar "></i>
+                                                <span>2 روز پیش</span>
+                                            </div>
+
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+                            <div class="item">
+                                <div class="general-box-inside-style">
+                                    <a href="">
+                                        <div class="box-image">
+                                            <img src="./images/2020-4-94774b6b-9532-471e-875f-4cae4a4bed48-638baf0b8b369136d4583913.webp"
+                                                alt="">
+                                        </div>
+                                        <div class="shadowItem"></div>
+                                        <div class="title">چگونه جیمیل یکبار مصرف بسازیم
+                                        </div>
+
+                                        <div class="details">
+
+                                            <div class="comment">
+                                                <i class="fal fa-clock"></i>
+                                                <span class="count">مطالعه 5 دقیقه</span>
+                                            </div>
+                                            <div class="date">
+                                                <i class="far fa-calendar "></i>
+                                                <span>2 روز پیش</span>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="general-box-inside-style">
+                                    <a href="">
+                                        <div class="box-image">
+                                            <img src="./images/2022-8-what-is-virtual-number-how-to-make-one-638bb4fd1d67bb742b228617.webp"
+                                                alt="">
+                                        </div>
+                                        <div class="shadowItem"></div>
+                                        <div class="title">شماره مجازی چیست و چگونه میتوانیم برای خود شماره مجازی
+                                            داشته باشیم
+                                        </div>
+
+                                        <div class="details">
+
+                                            <div class="comment">
+                                                <i class="fal fa-clock"></i>
+                                                <span class="count">30</span>
+                                            </div>
+                                            <div class="date">
+                                                <i class="far fa-calendar "></i>
+                                                <span>1 روز پیش</span>
+                                            </div>
+
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="pt-5 border-top">
+        <!-- <img src="./images/background.svg" alt=""> -->
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-6 col-lg-2">
+                    <ul class="list-group">
+                        <li class="mb-3 before"><a class="text-secondary" href="">مرور تمامی مطالب</a></li>
+                        <li class="mb-3"><a class="text-secondary" href="">تبلیغات در انیاک</a></li>
+                        <li class="mb-3"><a class="text-secondary" href="">تماس با ما</a></li>
+                        <li class="mb-3"><a class="text-secondary" href="">درباره با ما</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <ul class="list-group">
+                        <li class="mb-3"><a class="text-secondary" href="">حامیان انیاک</a></li>
+                        <li class="mb-3"><a class="text-secondary" href="">پارس پک | میزبانی و پشتیبانی</a></li>
+                        <li class="mb-3"><a class="text-secondary" href=""> وب رخ | جنس خوی پیکس ها</a></li>
+                        <li class="mb-3"><a class="text-secondary" href=""> the forge | هسته قدرتمند انیاک </a></li>
+                    </ul>
+                </div>
+                <div class="display-none col-md-7">
+                    <div class="row justify-content-between">
+                        <div class="col-md-2">
+                            <a href="">
+                                <svg viewBox="0 0 110 32" width="110" height="32">
+                                    <path fill="var(--text)"
+                                        d="M57.544 7.072C58.553 6.045 59.56 5.017 60.578 4c.536.512 1.044 1.053 1.568 1.578.16.169.336.32.482.501a.688.688 0 0 1-.155.186c-5.43 5.506-10.856 11.014-16.284 16.521-.923.95-1.878 1.88-2.964 2.638-1.155.819-2.462 1.429-3.842 1.728-1.663.352-3.406.32-5.053-.103-2.409-.61-4.59-2.083-6.085-4.092a11.27 11.27 0 0 1-1.879-3.905 11.254 11.254 0 0 1-.08-5.367 11.94 11.94 0 0 1 3.019-5.536c1.505-1.569 3.458-2.715 5.582-3.148a9.977 9.977 0 0 1 4.9.25c1.99.597 3.803 1.731 5.302 3.177a948.973 948.973 0 0 1 4.353 4.413c-.119.156-.266.285-.4.425l-1.264 1.283c-.131.13-.253.27-.396.386-1.143-1.145-2.273-2.304-3.41-3.456-.427-.423-.835-.866-1.28-1.269-.956-.863-2.082-1.542-3.307-1.926-1.395-.437-2.908-.512-4.33-.157a7.914 7.914 0 0 0-3.615 2.063 8.537 8.537 0 0 0-2.212 3.782 8.435 8.435 0 0 0 .236 5.169 8.062 8.062 0 0 0 3.836 4.33c1.344.701 2.884.98 4.388.873a7.45 7.45 0 0 0 2.325-.528c1.077-.437 2.026-1.142 2.883-1.925.56-.512 1.084-1.063 1.619-1.603 4.344-4.404 8.683-8.814 13.029-13.216zM58.967 12.446c1.66-1.678 3.308-3.368 4.975-5.04.691.691 1.379 1.386 2.058 2.09-5.663 5.76-11.34 11.504-17.006 17.26-.41.415-.815.834-1.23 1.244l-1.726-1.753c-.113-.112-.228-.223-.327-.348 4.414-4.49 8.836-8.97 13.256-13.453zM61.163 22.64c.084-.082.156-.178.255-.242.549.55 1.097 1.1 1.636 1.661-.36.389-.737.76-1.109 1.136-.18.173-.341.367-.532.528a62.335 62.335 0 0 1-1.643-1.664c.456-.481.931-.943 1.393-1.42zM58.774 25.065c.144-.143.279-.296.433-.428.546.556 1.1 1.103 1.637 1.669-.539.56-1.086 1.112-1.637 1.66-.562-.539-1.1-1.104-1.646-1.66.394-.424.808-.828 1.213-1.241zM63.65 24.665c.353.341.692.697 1.038 1.047.192.21.42.39.59.623-.22.255-.47.482-.699.728-.305.314-.611.626-.928.928-.342-.301-.66-.629-.983-.95-.225-.237-.464-.462-.664-.722.548-.552 1.082-1.119 1.645-1.654z">
+                                    </path>
+                                    <path
+                                        d="M80.949 5.005c1.012-.008 2.025-.004 3.038-.002.025 1.003.005 2.007.01 3.011v8.322c-.008.397.025.797-.04 1.192-.043.305-.007.615-.06.919-.068.452-.116.908-.23 1.353-.192.837-.441 1.667-.818 2.444-.542 1.159-1.302 2.23-2.28 3.079-1.224 1.087-2.789 1.778-4.413 2.059-.21.056-.432.032-.644.082-.253.062-.517.048-.775.049-.536.014-1.07 0-1.606-.004-.225 0-.437-.09-.663-.082-.21.005-.408-.07-.614-.096-.748-.111-1.474-.335-2.178-.6-1.31-.508-2.51-1.27-3.564-2.18-.552-.465-1.05-.986-1.57-1.485-.63-.616-1.259-1.235-1.894-1.848a2.271 2.271 0 0 0-.285-.256c-2.412 2.34-4.81 4.693-7.215 7.038-.529-.497-1.038-1.013-1.56-1.516-.198-.193-.402-.38-.588-.583.695-.682 1.402-1.353 2.092-2.039.288-.243.523-.537.81-.78.258-.245.494-.512.764-.743.355-.376.748-.716 1.104-1.092.278-.237.516-.513.784-.76.257-.219.468-.482.723-.703.24-.209.44-.455.68-.664.254-.221.466-.485.724-.703.228-.204.423-.441.654-.642.241-.208.441-.457.681-.665.247-.215.454-.469.7-.683.232-.202.426-.44.657-.643.249-.213.456-.467.701-.683.241-.208.442-.455.68-.665.22-.189.406-.41.618-.606.32-.278.592-.603.913-.879.32-.344.681-.648 1.002-.992.174-.178.372-.333.54-.518.187-.205.405-.38.59-.587.035-.058.12-.079.171-.026.627.612 1.244 1.232 1.882 1.833.057.057.111.119.166.18-.175.258-.432.447-.646.672-1.762 1.713-3.514 3.435-5.277 5.147-.064.063-.138.12-.171.206.746.752 1.516 1.482 2.269 2.228.443.427.864.878 1.351 1.259a10.461 10.461 0 0 0 3.701 1.898c.427.126.871.18 1.304.28.335-.014.659.087.993.075.221-.005.445.014.664-.033.232-.052.475-.014.703-.09a6.365 6.365 0 0 0 2.076-.765c1.084-.644 1.921-1.637 2.456-2.752.166-.393.349-.781.46-1.193.107-.418.228-.834.284-1.262.073-.293.048-.598.108-.893.055-.397.016-.8.03-1.198 0-3.805.01-7.61.008-11.415z"
+                                        fill="#FFAA01"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="">
+                                <svg width="106" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 25.16"
+                                    style="--z-text:var(--text);--z-logo:var(--primary-1)">
+                                    <style>
+                                        .z-text {
+                                            fill: var(--z-text);
+                                        }
+
+                                        .z-logo {
+                                            fill: var(--z-logo);
+                                        }
+                                    </style>
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="Layer_1-2" data-name="Layer 1">
+                                            <path class="z-logo"
+                                                d="M13.49,0H43.17a0,0,0,0,1,0,0L28.94,16H21.62a0,0,0,0,1,0,0L30.9,5.56a0,0,0,0,0,0,0H8.58L13.47,0h0">
+                                            </path>
+                                            <polygon class="z-logo"
+                                                points="29.71 25.16 0 25.16 14.25 9.16 21.6 9.16 12.27 19.62 34.62 19.62 29.71 25.16">
+                                            </polygon>
+                                            <polygon class="z-text"
+                                                points="62.27 6.16 49.64 6.16 52.78 2.66 70.47 2.66 56.3 19 69.47 19 67.19 22.5 48.1 22.5 62.27 6.16">
+                                            </polygon>
+                                            <path class="z-text"
+                                                d="M77.7,22.5a5.84,5.84,0,0,1-5.83-5.83V8.49a5.62,5.62,0,0,1,1.71-4.12A5.62,5.62,0,0,1,77.7,2.66h8.17A5.62,5.62,0,0,1,90,4.37,5.62,5.62,0,0,1,91.7,8.49v8.17a5.84,5.84,0,0,1-5.83,5.83Zm-2.33-5.83A2.33,2.33,0,0,0,77.7,19h8.17a2.33,2.33,0,0,0,2.33-2.33V8.49a2.33,2.33,0,0,0-2.33-2.33H77.7a2.33,2.33,0,0,0-2.33,2.33Z">
+                                            </path>
+                                            <path class="z-text"
+                                                d="M101.17,22.5a5.84,5.84,0,0,1-5.83-5.83V8.49A5.62,5.62,0,0,1,97,4.37a5.62,5.62,0,0,1,4.12-1.71h8.17a5.62,5.62,0,0,1,4.12,1.71,5.62,5.62,0,0,1,1.71,4.12v8.17a5.84,5.84,0,0,1-5.83,5.83Zm-2.33-5.83A2.33,2.33,0,0,0,101.17,19h8.17a2.33,2.33,0,0,0,2.33-2.33V8.49a2.33,2.33,0,0,0-2.33-2.33h-8.17a2.33,2.33,0,0,0-2.33,2.33Z">
+                                            </path>
+                                            <rect class="z-text" x="143.52" y="2.66" width="3.5" height="19.83"></rect>
+                                            <polygon class="z-text"
+                                                points="161.83 6.16 161.83 22.5 158.33 22.5 158.33 6.16 150.16 6.16 150.16 2.66 170 2.66 170 6.16 161.83 6.16">
+                                            </polygon>
+                                            <polygon class="z-text"
+                                                points="136.21 2.66 129.32 9.35 122.44 2.66 118.82 2.66 118.82 22.5 122.32 22.5 122.32 7.19 129.32 13.83 136.32 7.19 136.32 22.5 139.82 22.5 139.82 2.66 136.21 2.66">
+                                            </polygon>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+
+                        </div>
+                        <div class="col-md-2">
+                            <a href="">
+                                <svg viewBox="0 0 110 32" width="110" height="32">
+                                    <path fill="var(--text)"
+                                        d="M57.544 7.072C58.553 6.045 59.56 5.017 60.578 4c.536.512 1.044 1.053 1.568 1.578.16.169.336.32.482.501a.688.688 0 0 1-.155.186c-5.43 5.506-10.856 11.014-16.284 16.521-.923.95-1.878 1.88-2.964 2.638-1.155.819-2.462 1.429-3.842 1.728-1.663.352-3.406.32-5.053-.103-2.409-.61-4.59-2.083-6.085-4.092a11.27 11.27 0 0 1-1.879-3.905 11.254 11.254 0 0 1-.08-5.367 11.94 11.94 0 0 1 3.019-5.536c1.505-1.569 3.458-2.715 5.582-3.148a9.977 9.977 0 0 1 4.9.25c1.99.597 3.803 1.731 5.302 3.177a948.973 948.973 0 0 1 4.353 4.413c-.119.156-.266.285-.4.425l-1.264 1.283c-.131.13-.253.27-.396.386-1.143-1.145-2.273-2.304-3.41-3.456-.427-.423-.835-.866-1.28-1.269-.956-.863-2.082-1.542-3.307-1.926-1.395-.437-2.908-.512-4.33-.157a7.914 7.914 0 0 0-3.615 2.063 8.537 8.537 0 0 0-2.212 3.782 8.435 8.435 0 0 0 .236 5.169 8.062 8.062 0 0 0 3.836 4.33c1.344.701 2.884.98 4.388.873a7.45 7.45 0 0 0 2.325-.528c1.077-.437 2.026-1.142 2.883-1.925.56-.512 1.084-1.063 1.619-1.603 4.344-4.404 8.683-8.814 13.029-13.216zM58.967 12.446c1.66-1.678 3.308-3.368 4.975-5.04.691.691 1.379 1.386 2.058 2.09-5.663 5.76-11.34 11.504-17.006 17.26-.41.415-.815.834-1.23 1.244l-1.726-1.753c-.113-.112-.228-.223-.327-.348 4.414-4.49 8.836-8.97 13.256-13.453zM61.163 22.64c.084-.082.156-.178.255-.242.549.55 1.097 1.1 1.636 1.661-.36.389-.737.76-1.109 1.136-.18.173-.341.367-.532.528a62.335 62.335 0 0 1-1.643-1.664c.456-.481.931-.943 1.393-1.42zM58.774 25.065c.144-.143.279-.296.433-.428.546.556 1.1 1.103 1.637 1.669-.539.56-1.086 1.112-1.637 1.66-.562-.539-1.1-1.104-1.646-1.66.394-.424.808-.828 1.213-1.241zM63.65 24.665c.353.341.692.697 1.038 1.047.192.21.42.39.59.623-.22.255-.47.482-.699.728-.305.314-.611.626-.928.928-.342-.301-.66-.629-.983-.95-.225-.237-.464-.462-.664-.722.548-.552 1.082-1.119 1.645-1.654z">
+                                    </path>
+                                    <path
+                                        d="M80.949 5.005c1.012-.008 2.025-.004 3.038-.002.025 1.003.005 2.007.01 3.011v8.322c-.008.397.025.797-.04 1.192-.043.305-.007.615-.06.919-.068.452-.116.908-.23 1.353-.192.837-.441 1.667-.818 2.444-.542 1.159-1.302 2.23-2.28 3.079-1.224 1.087-2.789 1.778-4.413 2.059-.21.056-.432.032-.644.082-.253.062-.517.048-.775.049-.536.014-1.07 0-1.606-.004-.225 0-.437-.09-.663-.082-.21.005-.408-.07-.614-.096-.748-.111-1.474-.335-2.178-.6-1.31-.508-2.51-1.27-3.564-2.18-.552-.465-1.05-.986-1.57-1.485-.63-.616-1.259-1.235-1.894-1.848a2.271 2.271 0 0 0-.285-.256c-2.412 2.34-4.81 4.693-7.215 7.038-.529-.497-1.038-1.013-1.56-1.516-.198-.193-.402-.38-.588-.583.695-.682 1.402-1.353 2.092-2.039.288-.243.523-.537.81-.78.258-.245.494-.512.764-.743.355-.376.748-.716 1.104-1.092.278-.237.516-.513.784-.76.257-.219.468-.482.723-.703.24-.209.44-.455.68-.664.254-.221.466-.485.724-.703.228-.204.423-.441.654-.642.241-.208.441-.457.681-.665.247-.215.454-.469.7-.683.232-.202.426-.44.657-.643.249-.213.456-.467.701-.683.241-.208.442-.455.68-.665.22-.189.406-.41.618-.606.32-.278.592-.603.913-.879.32-.344.681-.648 1.002-.992.174-.178.372-.333.54-.518.187-.205.405-.38.59-.587.035-.058.12-.079.171-.026.627.612 1.244 1.232 1.882 1.833.057.057.111.119.166.18-.175.258-.432.447-.646.672-1.762 1.713-3.514 3.435-5.277 5.147-.064.063-.138.12-.171.206.746.752 1.516 1.482 2.269 2.228.443.427.864.878 1.351 1.259a10.461 10.461 0 0 0 3.701 1.898c.427.126.871.18 1.304.28.335-.014.659.087.993.075.221-.005.445.014.664-.033.232-.052.475-.014.703-.09a6.365 6.365 0 0 0 2.076-.765c1.084-.644 1.921-1.637 2.456-2.752.166-.393.349-.781.46-1.193.107-.418.228-.834.284-1.262.073-.293.048-.598.108-.893.055-.397.016-.8.03-1.198 0-3.805.01-7.61.008-11.415z"
+                                        fill="#FFAA01"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="">
+                                <svg width="106" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 25.16"
+                                    style="--z-text:var(--text);--z-logo:var(--primary-1)">
+                                    <style>
+                                        .z-text {
+                                            fill: var(--z-text);
+                                        }
+
+                                        .z-logo {
+                                            fill: var(--z-logo);
+                                        }
+                                    </style>
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="Layer_1-2" data-name="Layer 1">
+                                            <path class="z-logo"
+                                                d="M13.49,0H43.17a0,0,0,0,1,0,0L28.94,16H21.62a0,0,0,0,1,0,0L30.9,5.56a0,0,0,0,0,0,0H8.58L13.47,0h0">
+                                            </path>
+                                            <polygon class="z-logo"
+                                                points="29.71 25.16 0 25.16 14.25 9.16 21.6 9.16 12.27 19.62 34.62 19.62 29.71 25.16">
+                                            </polygon>
+                                            <polygon class="z-text"
+                                                points="62.27 6.16 49.64 6.16 52.78 2.66 70.47 2.66 56.3 19 69.47 19 67.19 22.5 48.1 22.5 62.27 6.16">
+                                            </polygon>
+                                            <path class="z-text"
+                                                d="M77.7,22.5a5.84,5.84,0,0,1-5.83-5.83V8.49a5.62,5.62,0,0,1,1.71-4.12A5.62,5.62,0,0,1,77.7,2.66h8.17A5.62,5.62,0,0,1,90,4.37,5.62,5.62,0,0,1,91.7,8.49v8.17a5.84,5.84,0,0,1-5.83,5.83Zm-2.33-5.83A2.33,2.33,0,0,0,77.7,19h8.17a2.33,2.33,0,0,0,2.33-2.33V8.49a2.33,2.33,0,0,0-2.33-2.33H77.7a2.33,2.33,0,0,0-2.33,2.33Z">
+                                            </path>
+                                            <path class="z-text"
+                                                d="M101.17,22.5a5.84,5.84,0,0,1-5.83-5.83V8.49A5.62,5.62,0,0,1,97,4.37a5.62,5.62,0,0,1,4.12-1.71h8.17a5.62,5.62,0,0,1,4.12,1.71,5.62,5.62,0,0,1,1.71,4.12v8.17a5.84,5.84,0,0,1-5.83,5.83Zm-2.33-5.83A2.33,2.33,0,0,0,101.17,19h8.17a2.33,2.33,0,0,0,2.33-2.33V8.49a2.33,2.33,0,0,0-2.33-2.33h-8.17a2.33,2.33,0,0,0-2.33,2.33Z">
+                                            </path>
+                                            <rect class="z-text" x="143.52" y="2.66" width="3.5" height="19.83"></rect>
+                                            <polygon class="z-text"
+                                                points="161.83 6.16 161.83 22.5 158.33 22.5 158.33 6.16 150.16 6.16 150.16 2.66 170 2.66 170 6.16 161.83 6.16">
+                                            </polygon>
+                                            <polygon class="z-text"
+                                                points="136.21 2.66 129.32 9.35 122.44 2.66 118.82 2.66 118.82 22.5 122.32 22.5 122.32 7.19 129.32 13.83 136.32 7.19 136.32 22.5 139.82 22.5 139.82 2.66 136.21 2.66">
+                                            </polygon>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center justify-content-between flex-column-reverse flex-md-row  copy-right">
+                <div class="col-12 col-md-6">
+                    <p class=" text-secondary copy-right-p">© 1402 - 1389 کپی بخش یا کل هر کدام از مطالب زومیت تنها با
+                        کسب مجوز مکتوب امکان پذیر است
+                    </p>
+                </div>
+                <div class="col-12 col-md-5">
+                    <div class="d-flex justify-content-md-end justify-content-between mb-3 m-md-0">
+                        <a href="" class="me-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"
+                                fill="#9696a0">
+                                <defs>
+                                    <filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%"
+                                        height="100%">
+                                        <feColorMatrix type="matrix" in="SourceGraphic"
+                                            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"></feColorMatrix>
+                                    </filter>
+                                    <image id="image7" width="16" height="16"
+                                        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAJ0lEQVQ4jWNgoBAwMjAwMPz/w/yfLM0sfxmZKHXBqAGjBowaQCUAACboBBz/9bsEAAAAAElFTkSuQmCC">
+                                    </image>
+                                    <mask id="mask0">
+                                        <g filter="url(#alpha)">
+                                            <use href="#image7"></use>
+                                        </g>
+                                    </mask>
+                                    <clipPath id="clip1">
+                                        <rect x="0" y="0" width="16" height="16"></rect>
+                                    </clipPath>
+                                    <g id="surface6" clip-path="url(#clip1)">
+                                        <path
+                                            d="M 3 11 C 4.105469 11 5 11.894531 5 13 C 5 14.105469 4.105469 15 3 15 C 1.894531 15 1 14.105469 1 13 C 1 11.894531 1.894531 11 3 11 Z M 1 1 C 8.699219 1 15 7.300781 15 15 L 12.300781 15 C 12.300781 8.800781 7.199219 3.699219 1 3.699219 Z M 1 5.699219 C 6.101562 5.699219 10.300781 9.898438 10.300781 15 L 7.699219 15 C 7.699219 11.300781 4.699219 8.300781 1 8.300781 Z M 1 5.699219 ">
+                                        </path>
+                                    </g>
+                                </defs>
+                                <g id="surface1">
+                                    <use href="#surface6" mask="url(#mask0)"></use>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="" class="me-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"
+                                fill="#9696a0">
+                                <g id="surface1">
+                                    <path
+                                        d="M 15 0 C 15.550781 0 16 0.449219 16 1 L 16 15 C 16 15.550781 15.550781 16 15 16 L 1 16 C 0.449219 16 0 15.550781 0 15 L 0 1 C 0 0.449219 0.449219 0 1 0 Z M 4.460938 4 L 1 4 L 1 4.234375 C 1.261719 4.253906 1.472656 4.300781 1.628906 4.375 C 1.78125 4.449219 1.914062 4.550781 2.019531 4.683594 C 2.089844 4.765625 2.3125 4.996094 2.480469 5.375 L 6.039062 12.75 L 6.273438 12.75 L 8.074219 9.050781 L 9.859375 12.75 L 10.09375 12.75 L 13.640625 5.46875 C 13.816406 5.046875 14.078125 4.730469 14.304688 4.523438 C 14.460938 4.382812 14.695312 4.289062 15 4.234375 L 15 4 L 12.402344 4 L 12.402344 4.234375 L 12.511719 4.253906 C 12.804688 4.296875 12.945312 4.378906 13.070312 4.488281 C 13.191406 4.601562 13.253906 4.71875 13.253906 4.839844 C 13.253906 5.027344 13.089844 5.367188 12.886719 5.855469 L 10.320312 10.808594 L 8.710938 7.742188 L 9.816406 5.46875 C 9.992188 5.046875 10.257812 4.730469 10.484375 4.523438 C 10.640625 4.382812 10.871094 4.289062 11.179688 4.234375 L 11.179688 4 L 8.582031 4 L 8.582031 4.234375 L 8.691406 4.253906 C 8.984375 4.296875 9.125 4.378906 9.246094 4.488281 C 9.371094 4.601562 9.429688 4.71875 9.429688 4.839844 C 9.429688 5.027344 9.265625 5.367188 9.066406 5.855469 L 8.398438 7.140625 L 7.691406 5.792969 C 7.496094 5.347656 7.398438 5.019531 7.398438 4.808594 C 7.398438 4.65625 7.457031 4.53125 7.574219 4.433594 C 7.695312 4.339844 7.886719 4.269531 8.285156 4.234375 L 8.285156 4 L 4.820312 4 L 4.820312 4.234375 C 5.085938 4.253906 5.296875 4.300781 5.449219 4.375 C 5.605469 4.449219 5.734375 4.550781 5.84375 4.683594 C 5.910156 4.765625 6.136719 4.996094 6.300781 5.375 L 7.753906 8.382812 L 6.496094 10.808594 L 3.867188 5.792969 C 3.671875 5.347656 3.574219 5.019531 3.574219 4.808594 C 3.574219 4.65625 3.632812 4.53125 3.753906 4.433594 C 3.871094 4.339844 4.0625 4.269531 4.460938 4.234375 Z M 4.460938 4 ">
+                                    </path>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="" class="me-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="#9696a0">
+                                <g>
+                                    <path
+                                        d="M23 0H1a.945.945 0 0 0-1 1v22a.945.945 0 0 0 1 1h22a.945.945 0 0 0 1-1V1a.945.945 0 0 0-1-1zM7.1 20.5H3.6V9h3.6v11.5zM5.3 7.4a2.1 2.1 0 1 1 2.1-2.1 2.051 2.051 0 0 1-2.1 2.1zm15.2 13.1h-3.6v-5.6c0-1.3 0-3-1.8-3-1.9 0-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6a3.717 3.717 0 0 1 3.4-1.8c3.6 0 4.3 2.4 4.3 5.5z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="" class="me-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"
+                                fill="#9696a0">
+                                <path
+                                    d="M15.8 4.8c-.2-1.3-.8-2.2-2.2-2.4C11.4 2 8 2 8 2s-3.4 0-5.6.4C1 2.6.3 3.5.2 4.8 0 6.1 0 8 0 8s0 1.9.2 3.2c.2 1.3.8 2.2 2.2 2.4C4.6 14 8 14 8 14s3.4 0 5.6-.4c1.4-.3 2-1.1 2.2-2.4C16 9.9 16 8 16 8s0-1.9-.2-3.2zM6 11V5l5 3-5 3z"
+                                    transform="translate(-1228.000000, -1286.000000) translate(1228.000000, 1286.000000)">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="" class="me-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24" height="24"
+                                fill="#9696a0">
+                                <path
+                                    d="M12 0c2.056 0 4 1.944 4 4v8c0 2.056-1.944 4-4 4H4c-2.056 0-4-1.944-4-4V4c0-2.056 1.944-4 4-4h8zm0 2H4c-.935 0-2 1.065-2 2v8c0 .953 1.047 2 2 2h8c.935 0 2-1.065 2-2V4c0-.935-1.065-2-2-2zM8 4c2.206 0 4 1.794 4 4s-1.794 4-4 4-4-1.794-4-4 1.794-4 4-4zm0 2c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2zm4.145-3.068c.53 0 .96.43.96.96s-.43.96-.96.96-.96-.43-.96-.96.43-.96.96-.96z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="" class="me-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24" height="24"
+                                fill="#9696a0">
+                                <path
+                                    d="M14.412 12.022l-.414 1.832c-.16.712-.597 1.33-1.214 1.72-.555.351-1.215.49-1.86.397l-.215-.04-1.817-.41c2.326-.274 4.328-1.605 5.52-3.499zM8 1.262c3.72 0 6.737 3.017 6.737 6.738 0 3.72-3.016 6.737-6.737 6.737S1.263 11.72 1.263 8 4.279 1.263 8 1.263zM.478 8.893c.263 2.23 1.497 4.16 3.266 5.367l.233.153-1.832-.414c-.712-.16-1.33-.597-1.72-1.214-.35-.555-.49-1.215-.397-1.86l.04-.215.41-1.817zm9.206.371c-.93 0-1.684.754-1.684 1.684 0 .93.754 1.685 1.684 1.685.93 0 1.684-.755 1.684-1.685s-.754-1.684-1.684-1.684zM5.052 8c-.93 0-1.684.754-1.684 1.684 0 .93.754 1.684 1.684 1.684.93 0 1.685-.754 1.685-1.684C6.737 8.754 5.982 8 5.052 8zm3.374-.746c-.263-.154-.59-.154-.853 0-.263.155-.422.44-.415.746.01.457.384.823.842.823.458 0 .831-.366.841-.824.007-.305-.152-.59-.415-.745zm2.521-2.623c-.93 0-1.684.754-1.684 1.684 0 .93.754 1.685 1.684 1.685.93 0 1.685-.754 1.685-1.685 0-.93-.755-1.684-1.685-1.684zm1.075-3.044l1.832.414c1.427.322 2.343 1.7 2.11 3.125l-.032.164-.41 1.817c-.275-2.325-1.606-4.327-3.5-5.52zM6.315 3.368c-.93 0-1.684.754-1.684 1.684 0 .93.754 1.685 1.684 1.685.93 0 1.685-.755 1.685-1.685s-.754-1.684-1.685-1.684zM5.076.028l.215.04 1.817.41C4.878.74 2.948 1.975 1.74 3.744l-.153.233.414-1.832c.16-.712.598-1.33 1.215-1.72.555-.35 1.215-.49 1.86-.397z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="" class="me-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24" height="24"
+                                fill="#9696a0">
+                                <path
+                                    d="M15.968 1.293c-.026-.128-.114-.23-.232-.269-.21-.044-.428-.028-.63.048 0 0-14.019 5.348-14.82 5.94-.172.128-.23.202-.259.289-.138.424.293.608.293.608l3.613 1.25c.061.01.124.007.183-.012.822-.551 8.27-5.543 8.7-5.711.068-.021.118 0 .1.052-.172.637-6.606 6.707-6.641 6.744-.035.031-.053.078-.049.126l-.337 3.744s-.142 1.168.956 0c.779-.826 1.527-1.512 1.9-1.844 1.242.91 2.579 1.917 3.156 2.441.195.202.46.31.732.3.34-.044.618-.307.7-.66 0 0 2.561-10.906 2.646-12.374.008-.143.021-.23.021-.337.004-.112-.007-.225-.032-.335z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="" class="me-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24" height="24"
+                                fill="#9696a0">
+                                <path
+                                    d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/general.js"></script>
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+
+            // If we need pagination
+            // pagination: {
+            //     el: '.swiper-pagination',
+            // },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            spaceBetween: 30,
+
+
+            // And if we need scrollbar
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+            // slidesPerView: 8,
+
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+
+
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                },
+                800: {
+                    slidesPerView: 4,
+                    spaceBetween: 15,
+                },
+
+                960: {
+                    slidesPerView: 5,
+                    spaceBetween: 15,
+                },
+
+                1080: {
+                    slidesPerView: 5,
+                    spaceBetween: 15,
+                },
+                1240: {
+                    slidesPerView: 8,
+                    spaceBetween: 15,
+                }
+
+            }
+        });
+    </script>
+
+    <script>
+        const swiper2 = new Swiper('.suggestion-swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+
+            // If we need pagination
+            // pagination: {
+            //     el: '.swiper-pagination',
+            // },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            spaceBetween: 15,
+            scrollbar: {
+                draggable: true,
+                el: '.swiper-scrollbar',
+            },
+
+
+            // And if we need scrollbar
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+            // slidesPerView: 4,
+
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+
+
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 40
+                },
+                800: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+
+                960: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+
+                1080: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                1240: {
+                    slidesPerView: 4,
+                    spaceBetween: 15,
+                }
+
+            }
+        });
+    </script>
+    <script>
+        const swiper3 = new Swiper('.recent-swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            autoplay: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                type: "bullets"
+            },
+
+            // Navigation arrows
+
+            renderProgressbar: function (progressbarFillClass) {
+                console.log(progressbarFillClass)
+                return '<span class="' + progressbarFillClass + '"></span>';
+            },
+
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + (index + 1) + '</span>';
+            },
+
+
+            // And if we need scrollbar
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+            // slidesPerView: 4,
+
+            progressbarOpposite: true,
+
+            dynamicBullets: true,
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+
+
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 40
+                },
+                800: {
+                    slidesPerView: 1,
+                    spaceBetween: 15,
+                },
+
+                960: {
+                    slidesPerView: 1,
+                    spaceBetween: 15,
+                },
+
+
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

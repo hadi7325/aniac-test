@@ -1,0 +1,30 @@
+
+
+
+@media screen and (max-width : 600px) {
+      
+    .section-filter.responsive{
+         
+        overflow-x: auto;
+        
+        ul{
+           width: 600px;
+           
+        }
+        .manAndMax{
+             max-width:  250px !important;
+             min-width: 250px !important;
+             
+        }
+        .swiper-slide{
+            max-width:  250px !important;
+             min-width: 250px !important;
+                
+        }
+        .swiper-slide-custom-height{
+            max-width:  250px !important;
+            min-width: 250px !important;
+            width: 0 !important;
+        }
+    }
+    }
